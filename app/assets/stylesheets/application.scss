@@ -5,16 +5,14 @@
 #header {
 	background-color: black;
 	height: 120px;
-	margin: 2px 2px 0 2px;
+	border: 2px solid white;
+	border-bottom: 0px;
 	position: relative;
 }
 
 #header h5 {
 	color: gray;
-}
-
-#header a {
-	color: white;
+	font-size: 14px;
 }
 
 #logo {
@@ -26,10 +24,14 @@
 	left: 0;
 }
 
+#userButtons {
+	margin-top: -2px;
+}
+
 #jiggy_navbar {
 	background-color: #333333;
 	border: 2px solid white;
-	height: 50px;
+	height: 54px;
 }
 
 .custom_ul {
@@ -40,7 +42,8 @@
 .custom_li {
 	list-style-type: none;
 	width: 25%;
-	height: auto;
+	height: 50px;
+	padding-top: 15px;
 	display: inline;
 	margin: auto;
 }
@@ -66,6 +69,7 @@
 	height: auto;
 	border-right: 2px white solid;
 	color: white;
+	margin-right: 0px;
 }
 
 #allContent {
@@ -86,10 +90,12 @@
 
 #article1{
 	background: linear-gradient(black, gray);
+	padding: 0px 20px 20px;
 }
 
 #article2 {
 	background: linear-gradient(black, gray);
+	padding: 0px 20px 20px;
 }
 
 #skream {
@@ -103,16 +109,15 @@
 #sidebar {
 	color: white;
 	background: linear-gradient(black, gray);
-	height: 1331px;
 }
 
-#content h4 {
+#content h5 {
 	margin: 15px 0 20px;
 	color: gray;
 	text-decoration: underline;
 }
 
-#sidebar h4 {
+#sidebar h5 {
 	margin: 15px 0 20px;
 	text-align: center;
 	color: gray;
