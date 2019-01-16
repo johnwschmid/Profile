@@ -32,6 +32,7 @@
 	background-color: #333333;
 	border: 2px solid white;
 	height: 54px;
+	border-radius: 10px;
 }
 
 .custom_ul {
@@ -61,8 +62,16 @@
 #mainContainer {
 	border-left: 2px white solid;
 	border-right: 2px white solid;
-	height: 1400px;
+	height: auto;
 	background-color: black;
+	padding-bottom: 15px;
+}
+
+.footer {
+	background-color: black;
+	border: 2px white solid;
+	height: 50px;
+	color: white;
 }
 
 #content {
@@ -70,6 +79,7 @@
 	border-right: 2px white solid;
 	color: white;
 	margin-right: 0px;
+	padding: 0px 10px;
 }
 
 #allContent {
@@ -108,7 +118,13 @@
 
 #sidebar {
 	color: white;
+	padding: 0px 10px;
+}
+
+#sidebar_innerdiv {
 	background: linear-gradient(black, gray);
+	padding: 0 10px;
+	height: auto;
 }
 
 #content h5 {
@@ -230,6 +246,14 @@ div {
   &.field, &.actions {
     margin-bottom: 10px;
   }
+}
+
+.container-fluid {
+	border-radius: 10px;
+}
+
+.container-fluid {
+	border-radius: 10px;
 }
 
 #notice {
