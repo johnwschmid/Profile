@@ -1,0 +1,261 @@
+
+
+@import "bootstrap";
+
+#header {
+	background-color: black;
+	height: 120px;
+	margin: 2px 2px 0 2px;
+	position: relative;
+}
+
+#header h5 {
+	color: gray;
+}
+
+#header a {
+	color: white;
+}
+
+#logo {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+#jiggy_navbar {
+	background-color: #333333;
+	border: 2px solid white;
+	height: 50px;
+}
+
+.custom_ul {
+	width: 100%;
+	font-size: 15px;
+}
+
+.custom_li {
+	list-style-type: none;
+	width: 25%;
+	height: auto;
+	display: inline;
+	margin: auto;
+}
+
+.custom_li a {
+	text-decoration: none;
+	vertical-align: center;
+}
+
+#jiggy_navbar ul li:hover {
+	background: url('logo_cropped.png') no-repeat left;
+	height: 50px;
+}
+
+#mainContainer {
+	border-left: 2px white solid;
+	border-right: 2px white solid;
+	height: 1400px;
+	background-color: black;
+}
+
+#content {
+	height: auto;
+	border-right: 2px white solid;
+	color: white;
+}
+
+#allContent {
+	height: auto;
+	color: white;
+	border-right: 2px white solid;
+	border-left: 2px white solid;
+}
+
+#musicContent {
+	height: auto;
+	color: white;
+	border-right: 2px white solid;
+	border-left: 2px white solid;
+	border-bottom: 2px white solid;
+	background: linear-gradient(black, gray);
+}
+
+#article1{
+	background: linear-gradient(black, gray);
+}
+
+#article2 {
+	background: linear-gradient(black, gray);
+}
+
+#skream {
+	margin: auto;
+}
+
+#nectar {
+	margin: auto;
+}
+
+#sidebar {
+	color: white;
+	background: linear-gradient(black, gray);
+	height: 1331px;
+}
+
+#content h4 {
+	margin: 15px 0 20px;
+	color: gray;
+	text-decoration: underline;
+}
+
+#sidebar h4 {
+	margin: 15px 0 20px;
+	text-align: center;
+	color: gray;
+	text-decoration: underline;
+}
+
+#sidebar ul {
+	padding-left: 20px;
+}
+
+.biglist {
+	color: #C11A35;
+}
+
+.tinylist {
+	color: #730E79;
+	font-size: 9pt;
+	margin-bottom: 5px;
+}
+
+#successAlert {
+	margin: 2px;
+	text-align: center;
+	border: black 1px solid;
+}
+
+#signUp {
+	text-align: center;
+	border: 2px white solid;
+	margin-top: 20px;
+	text-decoration: underline #C11A35;;
+	padding-bottom: 10px;
+	color: #730E79;
+	
+}
+
+#signUp h4 {
+	color: #C11A35;
+}
+
+#userButtons {
+	position: absolute;
+	right: 1%;
+	top: 20%;
+	width: 90px;
+}
+#homeButton {
+	position: absolute;
+	right: 1%;
+	top: 35%;
+	width: 90px;
+}
+
+#bodyContainer {
+	background: linear-gradient(black, gray);
+	height: 700px;
+	color: gray;
+	font-weight: normal;
+	border-left: white 2px solid;
+	border-right: white 2px solid;
+}
+
+.form-group input {
+	width: 250px;
+}
+
+#error_explanation {
+	position: absolute;
+	margin: 20px 0 0 15px;
+	width: 300px;
+	color: red;
+	ul {
+		color: red;
+		margin: 0 0 30px 0;
+	}
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
