@@ -2,7 +2,7 @@
 
 @import "bootstrap";
 
-#header {
+.header {
 	background-color: black;
 	height: 120px;
 	border: 2px solid white;
@@ -10,12 +10,12 @@
 	position: relative;
 }
 
-#header h5 {
+.header h5 {
 	color: gray;
 	font-size: 14px;
 }
 
-#logo {
+.logo {
 	position: absolute;
 	margin: auto;
 	top: 0;
@@ -24,11 +24,11 @@
 	left: 0;
 }
 
-#userButtons {
-	margin-top: -2px;
+.login_btn {
+	border-color: white;
 }
 
-#jiggy_navbar {
+.jiggy_navbar {
 	background-color: #333333;
 	border: 2px solid white;
 	height: 54px;
@@ -50,13 +50,18 @@
 }
 
 .custom_li a {
+	display: block;
 	text-decoration: none;
 	vertical-align: center;
 }
 
-#jiggy_navbar ul li:hover {
+.jiggy_navbar ul li:hover {
 	background: url('logo_cropped.png') no-repeat left;
 	height: 50px;
+}
+
+.jiggy_navbar ul li a:hover {
+	background: none;
 }
 
 #mainContainer {
