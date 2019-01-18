@@ -1,0 +1,60 @@
+<div class="container-fluid header">
+
+  <a href="/">
+    <%= image_tag("logo_black.png", class: "logo") %>
+  </a>
+
+  <div style="padding-top: 10px">
+    <h5>A Sample Site By: John W. Schmid<h5>
+    <h5>
+      Github: <a href="https://github.com/johnwschmid" target="_blank">https://github.com/johnwschmid</a>
+      <br>
+      LinkedIn: <a href="https://www.linkedin.com/in/john-w-schmid/" target="_blank">https://www.linkedin.com/in/john-w-schmid/</a>
+    </h5>
+  </div>
+
+  <p class="navbar-text float-right" style="margin-bottom: -25px; color: lightgray; padding-top: 0;">
+    <% if user_signed_in? %>
+      Logged in as <strong style="font-size: 12px"><%= current_user.email %></strong>.
+      <br>
+      <span class="float-right">
+        <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link', style: "color: gray" %> |
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link', style: "color: gray" %>
+      </span>
+    <% else %>
+      <span class="float-right">
+        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link', style: "color: gray" %> |
+        <%= link_to "Login", new_user_session_path, :class => 'navbar-link', style: "color: gray" %>
+      </span>
+    <% end %>
+  </p>
+
+</div>
+
+<nav class="navbar navbar-expand-lg jiggy_navbar text-center">
+
+    <ul class="nav navbar-nav custom_ul">
+      <li class="nav-item">
+        <% if controller.controller_name == 'pages' && params[:action] == 'music' %>
+          <a href="/" style="nav-link">Home</a>
+        <% else %>
+          <a href="music" style="nav-link">Music</a>
+        <% end %>
+      </li>
+      <li class="nav-item">
+        <% if controller.controller_name == 'pages' && params[:action] == 'events' %>
+          <a href="/" style="nav-link">Home</a>
+        <% else %>
+          <a href="events" style="nav-link">Events</a>
+        <% end %>
+      </li>
+      <li class="nav-item">
+        <% if controller.controller_name == 'pages' && params[:action] == 'dev' %>
+          <a href="/" style="nav-link">Home</a>
+        <% else %>
+          <a href="dev" style="nav-link">Developer Info</a>
+        <% end %>
+      </li>
+    </ul>
+    
+</nav>

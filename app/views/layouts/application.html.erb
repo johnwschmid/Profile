@@ -12,14 +12,14 @@
   <body>
 
     <% flash.each do |message_type, message| %>
-      <div class="alert alert-<%= message_type %>" id="successAlert"><%= message %></div>
+      <div class="alert alert-<%= message_type %>"><%= message %></div>
     <% end %>
 
-    <%= render partial: 'layouts/navigation' %>
+    <%= render partial: 'layouts/header&navbar' %>
 
     <%= yield %>
 
-    <div class="footer text-center">Complain Here: notgoingtorespond@dontbother.com</p></div>
+    <%= render partial: 'layouts/footer' %>
 
   </body>
 </html>
