@@ -36,23 +36,23 @@
     <ul class="nav navbar-nav custom_ul">
       <li class="nav-item">
         <% if controller.controller_name == 'pages' && params[:action] == 'music' %>
-          <a href="/" style="nav-link">Home</a>
+          <%= link_to "Home", root_path, style: "nav-link" %>
         <% else %>
-          <a href="music" style="nav-link">Music</a>
+          <%= link_to "Music", music_path, style: "nav-link" %>
         <% end %>
       </li>
       <li class="nav-item">
         <% if controller.controller_name == 'pages' && params[:action] == 'events' %>
-          <a href="/" style="nav-link">Home</a>
-        <% else %>
-          <a href="events" style="nav-link">Events</a>
+            <%= link_to "Home", root_path, style: "nav-link" %>
+          <% else %>
+            <%= link_to "Events", events_path, style: "nav-link" %>
         <% end %>
       </li>
       <li class="nav-item">
         <% if controller.controller_name == 'pages' && params[:action] == 'dev' %>
-          <a href="/" style="nav-link">Home</a>
-        <% else %>
-          <a href="dev" style="nav-link">Developer Info</a>
+            <%= link_to "Home", root_path, style: "nav-link" %>
+          <% else %>
+            <%= link_to "Developer Info", dev_path, style: "nav-link" %>
         <% end %>
       </li>
     </ul>
