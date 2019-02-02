@@ -42,6 +42,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise'
 
+gem 'commontator', '~> 5.1.0'
+
+# -----------------------
 
 group :production do
 	gem 'pg'
