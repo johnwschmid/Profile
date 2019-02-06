@@ -1,21 +1,22 @@
 <div class="container-fluid" id="mainContainer">
   <div class="row">
+
     <div id="content" class="col-md-9 text-center">
-      <div id="article1">
-        <h5>Skream Sells Out Verizon Center</h5>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <br>
-        <img src="assets/skream.jpg" alt="Skream" id="skream" class="img-responsive">
-        <br>
-      </div>
-      <br>
-      <div id="article2">
-        <h5>Bassnectar Gives Out Free Hugs</h5>
-        <p>"Fusce congue efficitur malesuada. Vivamus hendrerit diam tempus mauris lobortis, a consectetur nisi aliquam. Fusce tempus fringilla enim sit amet condimentum. Fusce nulla justo, fermentum eget laoreet ac, vulputate in ante. Nullam vestibulum turpis in magna auctor consectetur sit amet sed sem. Cras eget lacus nibh. Suspendisse tincidunt nisi nec aliquet sollicitudin. Morbi sit amet auctor est. In nisl urna, dignissim eu lorem vel, dignissim ultricies massa. Quisque egestas lacinia efficitur. Morbi lacinia interdum eros ac congue. Curabitur dapibus tellus ante, sed viverra sapien porta et. Sed ornare in nibh vel malesuada. In ut magna malesuada leo ornare iaculis."</p>
-        <br>
-        <img src="assets/nectar.jpg" alt="Nectar" id="nectar" class="img-responsive">
-        <br>
-      </div>
+
+      <% @articles.each_with_index do |art, i| %>
+
+        <% images = ["skream", "nectar"] %>
+        
+        <div class="article">
+          <h5><%= art.title %></h5>
+          <p>"<%= art.description %>"</p>
+          <br>
+          <img src="assets/<%= images[i] %>.jpg" class="img-responsive">
+          <br>
+        </div>
+
+      <% end %>
+
     </div>
 
     <div id="sidebar" class="col-md-3">
