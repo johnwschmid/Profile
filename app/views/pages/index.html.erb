@@ -1,3 +1,7 @@
+<style type="text/css">
+
+</style>
+
 <div class="container-fluid" id="mainContainer">
   <div class="row">
 
@@ -8,7 +12,7 @@
         <% images = ["skream", "nectar"] %>
         
         <div class="article">
-          <h5><%= art.title %></h5>
+          <h5><%= link_to art.title, articles_show_path %></h5>
           <p>"<%= art.description %>"</p>
           <br>
           <img src="assets/<%= images[i] %>.jpg" class="img-responsive">
