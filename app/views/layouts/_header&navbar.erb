@@ -18,12 +18,12 @@
       Logged in as <strong style="font-size: 12px"><%= current_user.email %></strong>.
       <br>
       <span class="float-right">
-        <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link', style: "color: gray" %> |
+        <%= link_to 'Edit Profile', edit_user_registration_path, :class => 'navbar-link', style: "color: gray" %> |
         <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link', style: "color: gray" %>
       </span>
     <% else %>
       <span class="float-right">
-        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link', style: "color: gray" %> |
+        <%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link', style: "color: gray" %> |
         <%= link_to "Login", new_user_session_path, :class => 'navbar-link', style: "color: gray" %>
       </span>
     <% end %>
@@ -36,23 +36,23 @@
     <ul class="nav navbar-nav custom_ul">
       <li class="nav-item">
         <% if controller.controller_name == 'pages' && params[:action] == 'music' %>
-          <%= link_to "Home", root_path, style: "nav-link" %>
+          <%= link_to "Home", root_path, class: "home-link" %>
         <% else %>
-          <%= link_to "Music", music_path, style: "nav-link" %>
+          <%= link_to "Music", music_path, class: "navi-link" %>
         <% end %>
       </li>
       <li class="nav-item">
         <% if controller.controller_name == 'pages' && params[:action] == 'events' %>
-            <%= link_to "Home", root_path, style: "nav-link" %>
+            <%= link_to "Home", root_path, class: "home-link" %>
           <% else %>
-            <%= link_to "Events", events_path, style: "nav-link" %>
+            <%= link_to "Events", events_path, class: "navi-link" %>
         <% end %>
       </li>
       <li class="nav-item">
         <% if controller.controller_name == 'pages' && params[:action] == 'dev' %>
-            <%= link_to "Home", root_path, style: "nav-link" %>
+            <%= link_to "Home", root_path, class: "home-link" %>
           <% else %>
-            <%= link_to "Developer Info", dev_path, style: "nav-link" %>
+            <%= link_to "Developer Info", dev_path, class: "navi-link" %>
         <% end %>
       </li>
     </ul>

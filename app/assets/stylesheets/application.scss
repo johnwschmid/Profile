@@ -47,7 +47,7 @@
 
 .custom_ul {
 	width: 100%;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 .nav-item {
@@ -67,8 +67,31 @@
 }
 
 .jiggy_navbar ul li a:hover {
-	text-decoration: none;
 	background: none;
+	text-decoration: none;
+}
+
+.navi-link {
+  color: white;
+  &:hover {
+    color: gray;
+  }
+}
+
+.home-link {
+  color: red;
+  font-weight: bold;
+  &:hover {
+    color: darkred;
+  }
+}
+
+.gray-link {
+  color: gray;
+  font-weight: bold;
+  &:hover {
+    color: #fff;
+  }
 }
 
 .alert {
@@ -146,7 +169,6 @@
 	height: auto;
 }
 
-
 #sidebar h5 {
 	margin: 15px 0 20px;
 	text-align: center;
@@ -185,7 +207,6 @@
 	}
 }
 
-
 /* from scaffolds.css.scss */
 
 body {
@@ -195,17 +216,6 @@ body {
 }
 
 /*
-a {
-  color: #000;
-  &:visited {
-    color: blue;
-  }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
-}
-
 #notice {
   color: green;
 }

@@ -12,7 +12,7 @@
         <% images = ["skream", "nectar"] %>
         
         <div class="article">
-          <h5><%= link_to art.title, articles_show_path %></h5>
+          <h5><%= link_to art.title, articles_show_path, class: "gray-link" %></h5>
           <p>"<%= art.description %>"</p>
           <br>
           <img src="assets/<%= images[i] %>.jpg" class="img-responsive">
@@ -25,7 +25,7 @@
 
     <div id="sidebar" class="col-md-3">
       <div id="sidebar_innerdiv">
-        <h5>Upcoming Events</h5>
+        <h5 style="font-weight: bold">Upcoming Events</h5>
         <ul>
           <li class="biglist">Blues Show</li>
             <ul>
