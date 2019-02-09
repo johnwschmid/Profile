@@ -1,2 +1,26 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<div class="container-fluid" id="mainContainer">
+	<div class="row">
+
+		<div class="col-sm-2">
+		</div>
+
+    <div class="center-div col-sm-8 text-center">
+    	
+    	<br>
+    	<h4 style="font-weight: bold; color: gray;"><%= @article.title %>:</h4>
+    	<br>
+
+      <p><%= @article.description %></p>
+      <br>
+
+      <% img_no = @article.id - 1 %>
+      <%= image_tag(@images[img_no]) %>
+      <br><br>
+
+    </div>
+        
+		<div class="col-sm-2">
+		</div>
+
+    </div>
+</div>

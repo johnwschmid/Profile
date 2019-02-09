@@ -8,14 +8,12 @@
     <div class="content-div col-md-9 text-center">
 
       <% @articles.each_with_index do |art, i| %>
-
-        <% images = ["skream", "nectar"] %>
         
         <div class="article">
-          <h5><%= link_to art.title, articles_show_path, class: "gray-link" %></h5>
+          <h5><%= link_to art.title, articles_show_path(id: art.id), class: "gray-link" %></h5>
           <p>"<%= art.description %>"</p>
           <br>
-          <img src="assets/<%= images[i] %>.jpg" class="img-responsive">
+          <img src="assets/<%= @images[i] %>.jpg" class="img-responsive">
           <br>
         </div>
 
