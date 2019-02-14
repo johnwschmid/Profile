@@ -12,9 +12,9 @@
         <div class="article">
           <h5><%= link_to art.title, articles_show_path(id: art.id), class: "gray-link" %></h5>
           <p>"<%= art.description %>"</p>
-          <!-- <br> -->
-          <!-- <img src="assets/<%= @images[i] %>.jpg" class="img-responsive"> -->
-          <!-- <br> -->
+          <br>
+          <img src="assets/<%= @images[i] %>.jpg" class="img-responsive">
+          <br>
         </div>
 
       <% end %>
