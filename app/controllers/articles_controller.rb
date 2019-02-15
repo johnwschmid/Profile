@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
 
   def show
   	@images = ["skream", "nectar"]
+    commontator_thread_show(@article)
   end
 
   private
