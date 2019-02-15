@@ -5,17 +5,21 @@
 <div class="container-fluid" id="mainContainer">
   <div class="row">
 
-    <div class="content-div col-md-9 text-center">
+    <div class="content-div col-md-9">
 
       <% @articles.each_with_index do |art, i| %>
         
         <div class="article">
-          <h5><%= link_to art.title, articles_show_path(id: art.id), class: "gray-link" %></h5>
-          <p>"<%= art.description %>"</p>
+          <h5 class="text-center"><%= link_to art.title, articles_show_path(id: art.id), class: "gray-link" %></h5>
+          <p class="text-center">"<%= art.description %>"</p>
+
           <br>
-          <img src="assets/<%= @images[i] %>.jpg" class="img-responsive">
+            <div class="text-center"><img src="assets/<%= @images[i] %>.jpg" class="img-responsive text-center"></div>
           <br>
-          <%= commontator_thread(@commontable) %>
+
+          <div style="background-color: black;">
+          <%= commontator_thread(art) %>
+          </div>
         </div>
 
       <% end %>
