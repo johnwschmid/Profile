@@ -16,9 +16,13 @@
           <div style="background-color: black;">
             <%= commontator_thread(art) %>
           </div>
-          
+
           <br>
-            <div class="text-center"><img src="assets/<%= @images[i] %>.jpg" class="img-responsive text-center"></div>
+            <div>
+              <%= link_to articles_show_path(id: art.id) do %>
+                <img src="assets/<%= @images[i] %>.jpg" class="mx-auto d-block">
+              <% end %>
+            </div>
           <br>
 
         </div>
