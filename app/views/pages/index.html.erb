@@ -10,6 +10,7 @@
       <% @articles.each_with_index do |art, i| %>
         
         <div class="article">
+          
           <h5 class="text-center"><%= link_to art.title, articles_show_path(id: art.id), class: "gray-link" %></h5>
           <p class="text-center">"<%= art.description %>"</p>
 
@@ -18,11 +19,11 @@
           </div>
 
           <br>
-            <div>
-              <%= link_to articles_show_path(id: art.id) do %>
-                <img src="assets/<%= @images[i] %>.jpg" class="mx-auto d-block">
-              <% end %>
-            </div>
+          <div>
+            <%= link_to articles_show_path(id: art.id) do %>
+              <img src="assets/<%= @images[i] %>.jpg" class="mx-auto d-block">
+            <% end %>
+          </div>
           <br>
 
         </div>

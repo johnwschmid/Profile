@@ -13,11 +13,14 @@
       <p class= "text-center"><%= @article.description %></p>
       <br>
 
-      <%= commontator_thread(@article) %>
+      <div style="background-color: black">
+        <%= commontator_thread(@article) %>
+      </div>
 
+      <br>
       <% img_no = @article.id - 3 %>
       <%= image_tag(@images[img_no], class: "mx-auto d-block") %>
-      <br><br>
+      <br>
 
     </div>
         
