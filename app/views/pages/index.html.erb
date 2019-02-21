@@ -13,13 +13,14 @@
           <h5 class="text-center"><%= link_to art.title, articles_show_path(id: art.id), class: "gray-link" %></h5>
           <p class="text-center">"<%= art.description %>"</p>
 
+          <div style="background-color: black;">
+            <%= commontator_thread(art) %>
+          </div>
+          
           <br>
             <div class="text-center"><img src="assets/<%= @images[i] %>.jpg" class="img-responsive text-center"></div>
           <br>
 
-          <div style="background-color: black;">
-          <%= commontator_thread(art) %>
-          </div>
         </div>
 
       <% end %>
