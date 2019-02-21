@@ -4,17 +4,17 @@
 		<div class="col-sm-2">
 		</div>
 
-    <div class="center-div col-sm-8 text-center">
+    <div class="center-div col-sm-8">
     	
     	<br>
-    	<h4 style="font-weight: bold; color: gray;"><%= @article.title %>:</h4>
+    	<h4 class= "text-center" style="font-weight: bold; color: gray;"><%= @article.title %>:</h4>
     	<br>
 
-      <p><%= @article.description %></p>
+      <p class= "text-center"><%= @article.description %></p>
       <br>
 
       <% img_no = @article.id - 3 %>
-      <%= image_tag(@images[img_no]) %>
+      <%= image_tag(@images[img_no]), class: "text-center" %>
       <br><br>
 
       <%= commontator_thread(@article) %>
