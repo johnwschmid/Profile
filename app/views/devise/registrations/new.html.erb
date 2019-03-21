@@ -1,64 +1,47 @@
 <div class="container-fluid" id="mainContainer">
   <div class="row">
 
-    <div class="col-sm-2">
-    </div>
+    <div class="center-div offset-2 col-8 text-center">
+      
+      <br>
+      <h3>Sign Up</h3>
+      <br>
 
-        <div class="center-div col-sm-8 text-center">
-          
-          <br>
-          <h3>Sign Up</h3>
-          <br>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
 
-          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-
-            <div class="col left-div">
-              <%= devise_error_messages! %>
-            </div>
-
-            <div class="col" style="width: 200px;">
-              <div class="field">
-                <div class="form-group">
-                  <%= f.label :email, "Email"%>
-                  <br>
-                  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-                </div>
-              </div>
-
-              <div class="field">
-                <div class="form-group">
-                  <%= f.label :password, "Password" %>
-                  <br>
-                  <%= f.password_field :password, autocomplete: "new-password" %>
-                </div>
-              </div>
-
-              <div class="field">
-                <div class="form-group">
-                  <%= f.label :password_confirmation, "Password Confirmation" %>
-                  <br>
-                  <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-                </div>
-              </div>
-
-              <div class="actions">
-                <%= f.submit "Sign up" %>
-                <br>
-                <br>
-              </div>
-            </div>
-
-            <div class="col">
-            </div>
-
-
-          <% end %>
-
+        <div class="field">
+          <div class="form-group">
+            <%= f.label :email, "Email"%>
+            <br>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+          </div>
         </div>
-        
-    <div class="col-sm-2">
-    </div>
+
+        <div class="field">
+          <div class="form-group">
+            <%= f.label :password, "Password" %>
+            <br>
+            <%= f.password_field :password, autocomplete: "new-password" %>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="form-group">
+            <%= f.label :password_confirmation, "PW Confirmation" %>
+            <br>
+            <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+          </div>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "Sign up" %>
+          <br>
+          <br>
+        </div>
+      <% end %>
 
     </div>
+
+  </div>
 </div>
-
